@@ -1,0 +1,21 @@
+{
+  "name": "meshRadio",
+  "version": "0.1.0",
+  "authors": [
+    "elrakabawi <mselrakabawi@gmail.com>"
+  ],
+  "description": "Web-based Radio, a project by Netaq.",
+  "main": "index.html",
+  "keywords": [
+    "radio",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

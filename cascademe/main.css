@@ -1,0 +1,428 @@
+/* A project by Netaq. */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+* { margin: 0; padding: 0; }
+body {
+  background-repeat: no-repeat;
+}
+.area { position:relative;
+	border-radius: 100%;
+	background: transparent;
+	width:500px; 
+	height:500px; 
+	cursor: pointer;
+}
+.circle {  
+	border-radius:100%;
+	background:rgba(0,0,0,0.1);
+	box-shadow:0 0 2px 2px rgba(f,f,f,0.3);
+	margin: auto; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0; 
+	-webkit-transition:0.1s ease all;
+	-moz-transition:0.1s ease all;
+	-o-transition:0.1s ease all;
+	transition:0.1s ease all;
+}
+.visualizer { 
+	position: relative;
+	top: -470px;
+	left: 7;
+	width: 500px;
+}
+
+body {
+		background-image: url(img/bk_light.png);
+		background-size: 100%;
+	}
+	.top-bar {
+		width: auto;
+		margin:0;
+		padding: 25px
+	}
+	.top-bar .right {
+		width: auto;
+		right: 20px;
+		position: fixed;
+	}
+	.soc_fb {
+		width: 95px;
+		height: 45px;
+		text-align: center;
+		border-radius: 3px;
+		padding: 2px;
+		border-style: 3px solid;
+		border-color: #000;
+		color: #fff;
+		font-size: 12px;
+		border-style: none;
+		text-decoration: none;
+		box-shadow: none;
+		background-color: #3b5998;
+		opacity: 0.6;
+		cursor: pointer;
+		-moz-transition: opacity ease-in-out 0.3s;
+	    -webkit-transition: opacity ease-in-out 0.3s;
+ 	    -o-transition: opacity ease-in-out 0.3s;
+	    transition: opacity ease-in-out 0.3s;
+	}
+	.soc_fb:hover {
+		opacity: 1;
+	}
+	.typcn .typcn-social-facebook {
+		margin: 0;
+		padding: 0;
+	}
+	.fb-title {
+		text-decoration: none;
+		font-size: 13px;
+		font-family: 'Ubuntu';
+		font-weight: 700;
+		padding: 0;
+		margin-left: 0;
+		margin-right: 8px;
+		margin-bottom: 40px;
+	}
+	.player {
+		margin-top: 70px;
+	}
+	.background {
+		opacity: 0.8;
+	}
+	.player_cir {
+		width: 230px;
+		height: 230px;
+		border-radius: 50%;
+		background-color: transparent;
+		border: 6px solid #000;
+		opacity: 0.7;
+		-moz-transition: opacity ease-in-out 0.3s;
+	    -webkit-transition: opacity ease-in-out 0.3s;
+ 	    -o-transition: opacity ease-in-out 0.3s;
+	    transition: opacity ease-in-out 0.3s;
+	}
+	.player_bk {
+		background-size: 230px;
+		background-image: url(img/logo.png);
+		background-repeat: no-repeat;
+		width: 230px;
+		height: 230px;
+	}
+	.bk-support {
+		width: 230px;
+		height: 230px;
+		border-radius: 50%;
+		background-color: #fff;
+		opacity: 0.9;
+	}
+	.progs {
+		width: auto;
+		font-size: 24px;
+		font-family: Ubuntu;
+		height: 20px;
+		border-top: 1px solid #e5e5e5;
+		background-color: #fff;
+		padding: 36px;
+	}
+	.prog_cvr{
+		background-image: url(img/bk_matr.png);
+		background-image: cover;
+		height: 590px;
+  		background-repeat: no-repeat;
+	}
+	.prog_notf {
+		width: 50px;
+		height: 45px;
+		text-align: center;
+		border-radius: 3px;
+		padding: 2px;
+		border-style: 3px solid;
+		border-color: #000;
+		color: #fff;
+		font-weight: 700;
+		font-size: 12px;
+		border-style: none;
+		text-decoration: none;
+		box-shadow: none;
+		margin-left: 10px;
+		background-color: #ff2b32;
+		opacity: 0.7;
+		cursor: pointer;
+		-moz-transition: width ease-in-out 0.3s;
+	    -webkit-transition: width ease-in-out 0.3s;
+ 	    -o-transition: width ease-in-out 0.3s;
+	    transition: width ease-in-out 0.3s;
+	}
+	.prog_notf:hover {
+		width: 130px;
+	}
+	.notf_txt {
+		display: none;
+		-moz-transition: display ease-in-out 0.3s;
+	    -webkit-transition: display ease-in-out 0.3s;
+ 	    -o-transition: display ease-in-out 0.3s;
+	    transition: display ease-in-out 0.3s;
+	}
+	.prog_notf:hover .notf_txt {
+		display: inherit;
+
+	}
+	.media {
+		border-style: none;
+		text-decoration: none;
+		box-shadow: none;
+		background-color: transparent;
+		width: auto;
+		height: auto;
+	}
+.volume {
+	margin: 10px auto;
+	width: 250px;
+	height: 250px;	
+	position: relative;
+	padding: 15px;
+	z-index: 2;	
+}
+#volume-knob {
+	width: 245px;
+	height: 245px;	
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 12px;
+	border-radius: 125px;
+	display:block;
+	background: #fff;
+	z-index: 3;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+.player_bkgnd {
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	background-size: 245px;
+	height: 245px;
+	width: 245px;
+	display: block;
+}
+.player_outer {
+	width: 260px;
+	height: 260px;	
+	-webkit-border-radius: 999;
+	-moz-border-radius: 999;
+	border-radius: 999;
+	display:block;
+	background: #000;
+	z-index: -111;
+	position: absolute;
+	top: 17.5px;
+	left: 17.5px;
+}
+#progress-bar {
+	clip: rect(0px, 140px, 280px, 0px);
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotate(30deg);	
+}
+#l-bar,
+#r-bar {
+	-webkit-border-radius: 280px;
+	border-radius: 280px;
+	background: #000;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 280px;
+	height: 280px;
+	z-index: 1;
+}
+#r-bar {
+	display: none;
+	-webkit-transform: rotate(2deg); /* set initial position of right half of the circle */ 
+	clip: rect(0px, 280px, 280px, 140px);
+}
+#l-bar {
+	-webkit-transform: rotate(180deg); /* set initial position of left half of the circle */ 
+	clip: rect(0px, 140px, 280px, 0px);	
+}
+#icon-sound-off, #icon-sound-alt, #icon-sound {
+	font-size: 19px;
+	position: absolute;
+	opacity: 0.4;
+	-moz-transition: opacity ease-in-out 0.4s;
+	-webkit-transition: opacity ease-in-out 0.4s;
+ 	-o-transition: opacity ease-in-out 0.4s;
+	transition: opacity ease-in-out 0.4s;
+}
+#icon-sound-off {
+	top: 270px;
+	left: 45px;
+	opacity: 0;	
+	z-index: 9999999;
+}
+#icon-sound-alt {
+	top: 270px;
+	left: 214px;
+	z-index: 9999999;
+}
+#icon-sound {
+	top: 270px;
+	left: 45px;
+	z-index: 9999999;
+}
+#icon-play, #icon-pause {
+	font-size: 120px;
+	position: absolute;
+	color: #fff;
+	opacity: 0;
+	-moz-transition: opacity ease-in-out 0.4s;
+	-webkit-transition: opacity ease-in-out 0.4s;
+ 	-o-transition: opacity ease-in-out 0.4s;
+	transition: opacity ease-in-out 0.4s;
+}
+#icon-play {	
+	top: 75px;
+	left: 90px;
+	display: block;
+	z-index: 9999999;
+}
+#icon-pause {
+	top: 72px;
+	left: 80px;
+	display: none;
+	z-index: 9999999;
+}
+.volume:hover #icon-play {
+	opacity: 1;
+}
+.volume:hover #icon-pause {
+	opacity: 1;
+}
+.prog_title {
+	font-family: Ubuntu;
+	position: relative;
+	width: auto;
+	font-weight: bold;	
+	font-size: 24px;
+	margin-top: 60px;
+	color: rgba(0,0,0,0.7);
+}
+.left {
+	position: absolute;
+	left: 10px;
+}
+.general_notf {
+
+}
+.schedule {
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 100px;
+}
+.row-s {
+	width: 100%;
+	height: 200px;
+	color: #fff;
+}
+.card-s {
+	float: left;
+	border-radius: 999;
+	margin-left: 9.3%;
+	margin-bottom: 40px;
+	width: 180px;
+	height: 180px;
+	background-color: #000;
+}
+.card_bk {
+	height: 180px;
+	width: 180px;
+	border-radius: 999px;
+	z-index: 1;
+	opacity: 0.3;
+}
+.prog_name, .presenter, .time {
+	font-family: Ubuntu;
+	color: #fff;
+	opacity: 1;
+	position: relative;
+}
+.presenter {
+	font-size: 15px;
+	top: -98px;
+	left: 0;
+	-moz-transition: opacity ease-in-out 0.4s;
+	-webkit-transition: opacity ease-in-out 0.4s;
+ 	-o-transition: opacity ease-in-out 0.4s;
+	transition: opacity ease-in-out 0.4s;
+
+}
+.prog_name {
+	font-size: 18px;
+	top: -105px;
+	left: 0;
+	-moz-transition: opacity ease-in-out 0.4s;
+	-webkit-transition: opacity ease-in-out 0.4s;
+ 	-o-transition: opacity ease-in-out 0.4s;
+	transition: opacity ease-in-out 0.4s;
+
+}
+.typcn-stopwatch {
+	position: relative;
+	opacity: 0;
+	font-size: 70px;
+	color: #fff;
+	top: -180px;	
+	left: 0;
+	-moz-transition: opacity ease-in-out 0.4s;
+	-webkit-transition: opacity ease-in-out 0.4s;
+ 	-o-transition: opacity ease-in-out 0.4s;
+	transition: opacity ease-in-out 0.4s;
+
+}
+.time {
+	opacity: 0;
+	font-size: 15px;
+	top: -170px;
+	left: 0;
+	-moz-transition: opacity ease-in-out 0.4s;
+	-webkit-transition: opacity ease-in-out 0.4s;
+ 	-o-transition: opacity ease-in-out 0.4s;
+	transition: opacity ease-in-out 0.4s;
+
+}
+.card-s:hover .typcn-stopwatch {
+	opacity: 1;
+}
+.card-s:hover .prog_name {
+	opacity: 0;
+}
+.card-s:hover .presenter {
+	opacity: 0;
+}
+.card-s:hover .time {
+	opacity: 1;
+}
+#notf_bar {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background: #ffc65e;
+	opacity: 0.9;
+}
+#notf_body {
+	margin-top: 0;
+}
+.notf_message {
+	font-size: 18px;
+	font-weight: 300;
+	padding: 10px;
+}
