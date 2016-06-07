@@ -114,6 +114,38 @@ window.onload = function(){
 		var v = null;
 		var lastEl;
 		var lastElparentId;
+		for(var i=0; i<vis.length; i++) {
+			vis[i].onload = (function() {
+
+				return function() {
+					var el = this;
+					var id = el.parentNode.id;
+
+						if (!v) {
+							v = new Visualization({renderer: renderers[id] });
+						}
+						v.setRenderer(renderers[id]);
+						if (v.isPlaying()) {
+							if (lastElparentId === id) {
+								v.stop();
+								el.style.backgroundColor = 'rgba(0,0,0,0.3)';
+							} 
+							else {
+								lastEl.style.backgroundColor = 'rgba(0,0,0,0.3)';
+								el.style.backgroundColor = 'rgba(0,0,0,0)';
+							}
+								
+						}
+						else {
+								
+							v.start();
+							el.style.backgroundColor = 'rgba(0,0,0,0)';
+						}
+					lastElparentId = id;
+					lastEl = el;
+				};
+			})();
+		}
 
 	};
 
