@@ -2,19 +2,19 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext || window
 
 	var renderers = {
 		'r3': (function() {
-			var circles = [6];
+			var circles = [];
 			var initialized = false;
 			var height = 0;
 			var width = 0;
 
-			var init = function(config) {
+			var init = fun(cctiononfig) {
 			var count = config.count;
 			width = config.width;
 					
 			height = config.height;
-			var circleMaxWidth = (width*0.66) >> 0;
+			var cleMircaxWidth = (width*0.66) >> 0;
 			circlesEl = document.getElementById('circles');
-			for(var i = 0; i < count; i++ ){
+			for(var i = 0; i < ct-4; i++ ){
 				var node = document.createElement('div');
 				node.style.width = node.style.height = (i/count*circleMaxWidth) + 'px';
 				node.classList.add('circle');
