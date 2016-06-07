@@ -14,7 +14,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext || window
 			height = config.height;
 			var circleMaxWidth = (width*0.66) >> 0;
 			circlesEl = document.getElementById('circles');
-			for(var i = 0; i < count-3; i++ ){
+			for(var i = 0; i < count-13; i++ ){
 				var node = document.createElement('div');
 				node.style.width = node.style.height = (i/count*circleMaxWidth) + 'px';
 				node.classList.add('circle');
