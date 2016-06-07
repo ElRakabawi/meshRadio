@@ -212,9 +212,9 @@ body {
 .player_outer {
 	width: 260px;
 	height: 260px;	
-	-webkit-border-radius: 999;
-	-moz-border-radius: 999;
-	border-radius: 999;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
 	display:block;
 	background: #000;
 	z-index: -111;
