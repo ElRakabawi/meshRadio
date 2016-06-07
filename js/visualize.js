@@ -1,6 +1,5 @@
 window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext;
 
-window.onload = function(){
 
 	var renderers = {
 		'r3': (function() {
@@ -148,5 +147,3 @@ window.onload = function(){
 		}
 
 	};
-
-};
