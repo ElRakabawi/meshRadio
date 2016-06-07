@@ -24,6 +24,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext || window
 			initialized = true;
 			};
 			var max = 256;
+			
 
 			var renderFrame = function(frequencyData) {
 			for(var i = 0; i < circles.length; i++) {
