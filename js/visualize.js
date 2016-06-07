@@ -115,7 +115,7 @@ window.onload = function(){
 		var lastEl;
 		var lastElparentId;
 		for(var i=0; i<vis.length; i++) {
-			vis[i].onload = (function() {
+			vis[i].onclick= (function() {
 
 				return function() {
 					var el = this;
