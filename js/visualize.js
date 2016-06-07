@@ -2,7 +2,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext || window
 
 	var renderers = {
 		'r3': (function() {
-			var circles = [];
+			var circles = [6];
 			var initialized = false;
 			var height = 0;
 			var width = 0;
