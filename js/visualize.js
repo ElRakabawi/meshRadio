@@ -7,12 +7,12 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext || window
 			var height = 0;
 			var width = 0;
 
-			var init = fun(cctiononfig) {
+			var init = function(config) {
 			var count = config.count;
 			width = config.width;
 					
 			height = config.height;
-			var cleMircaxWidth = (width*0.66) >> 0;
+			var circleMaxWidth = (width*0.66) >> 0;
 			circlesEl = document.getElementById('circles');
 			for(var i = 0; i < count; i++ ){
 				var node = document.createElement('div');
